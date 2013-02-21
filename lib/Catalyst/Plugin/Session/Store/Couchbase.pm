@@ -8,7 +8,7 @@ use Couchbase::Client 1.00;
 use namespace::clean -except => 'meta'; # The last bit cargo culted.
 use Storable qw(nfreeze thaw);
 
-our $VERSION = '0.91';
+our $VERSION = '0.92';
 
 __PACKAGE__->mk_classdata('_session_couchbase_handle');
 __PACKAGE__->mk_classdata('_session_couchbase_prefix');
@@ -123,7 +123,9 @@ Toby Corkindale, C<< <tjc at wintrmute.net> >>
 
 =head1 BUGS
 
-Please report any bugs to the Github repo for this module.
+Please report any bugs to the Github repo for this module:
+
+https://github.com/TJC/Catalyst-Plugin-Session-Store-Couchbase
 
 =head1 SUPPORT
 

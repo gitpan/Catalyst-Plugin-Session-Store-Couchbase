@@ -4,7 +4,6 @@ author:
   - 'Toby Corkindale, C<< <tjc at wintrmute.net> >>'
   - 'Toby Corkindale <tjc@wintrmute.net>'
 build_requires:
-  Catalyst::Plugin::Session: 0.27
   ExtUtils::MakeMaker: 6.36
   Test::More: 0
 configure_requires:
@@ -21,6 +20,11 @@ no_index:
   directory:
     - inc
     - t
+requires:
+  Catalyst::ClassData: 0
+  Catalyst::Plugin::Session: 0.27
+  Couchbase::Client: 1
+  Moose: 0
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.91
+version: 0.92
